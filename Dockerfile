@@ -27,6 +27,6 @@ EXPOSE 8080
 
 COPY startup.sh /opt/startup.sh
 
-ENTRYPOINT /opt/startup.sh
+#ENTRYPOINT /opt/startup.sh
 
 WORKDIR $CATALINA_HOME
