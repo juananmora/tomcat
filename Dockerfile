@@ -1,6 +1,6 @@
 # Use a minimal image as parent
 FROM openjdk:8-jdk-alpine
-RUN adduser jon
+RUN adduser -S -D jon
 USER jon
 
 # Environment variables
