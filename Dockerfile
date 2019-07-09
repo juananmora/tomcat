@@ -2,7 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 #RUN adduser -S -D jon
-RUN adduser -ms /bin/bash jon
+RUN adduser -s /bin/bash jon
 USER jon
 
 # Environment variables
