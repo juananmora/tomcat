@@ -1,5 +1,8 @@
 # Use a minimal image as parent
 FROM openjdk:8-jdk-alpine
+RUN useradd --create-home -s /bin/bash user
+WORKDIR /home/user
+USER user
 
 # Environment variables
 ENV TOMCAT_MAJOR=8 \
