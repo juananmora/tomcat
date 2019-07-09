@@ -1,7 +1,5 @@
 # Use a minimal image as parent
 FROM openjdk:8-jdk-alpine
-RUN adduser -S -D jon
-
 
 # Environment variables
 ENV TOMCAT_MAJOR=8 \
@@ -33,4 +31,5 @@ ENTRYPOINT /opt/apache-tomcat-8.5.37/bin/catalina.sh run
 
 WORKDIR $CATALINA_HOME
 
+RUN adduser -S -D jon
 USER jon
