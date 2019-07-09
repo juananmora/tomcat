@@ -31,5 +31,5 @@ ENTRYPOINT /opt/apache-tomcat-8.5.37/bin/catalina.sh run
 
 WORKDIR $CATALINA_HOME
 
-RUN adduser -S -D jon
-USER jon
+#RUN adduser -S -D jon
+#USER jon
