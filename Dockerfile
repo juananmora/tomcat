@@ -2,8 +2,8 @@
 FROM openjdk:8-jdk-alpine
 
 #RUN adduser -S -D jon
-RUN adduser -D -s /bin/bash jon
-USER jon
+#RUN adduser -D -s /bin/bash jon
+#USER jon
 
 # Environment variables
 ENV TOMCAT_MAJOR=8 \
