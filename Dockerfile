@@ -31,7 +31,10 @@ EXPOSE 8080
 
 COPY startup.sh /opt/startup.sh
 
-ENTRYPOINT /opt/apache-tomcat-8.5.37/bin/catalina.sh run
+ADD tomcat-users.xml $CATALINA_HOME/conf/
+ADD jpetstore.war $CATALINA_HOME/webapps/
+
+ENTRYPOINT $CATALINA_HOME/bin/catalina.sh run
 
 WORKDIR $CATALINA_HOME
 
