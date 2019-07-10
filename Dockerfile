@@ -32,6 +32,8 @@ EXPOSE 8080
 COPY startup.sh /opt/startup.sh
 
 ADD tomcat-users.xml $CATALINA_HOME/conf/
+ADD context.xml $CATALINA_HOME/webapps/manager/META-INF/
+ADD context.xml $CATALINA_HOME/webapps/host-manager/META-INF/
 ADD jpetstore.war $CATALINA_HOME/webapps/
 
 ENTRYPOINT $CATALINA_HOME/bin/catalina.sh run
