@@ -42,4 +42,7 @@ ENTRYPOINT $CATALINA_HOME/bin/catalina.sh run
 
 WORKDIR $CATALINA_HOME
 
+RUN adduser -D -s /bin/sh jon
+USER jon
+
 
