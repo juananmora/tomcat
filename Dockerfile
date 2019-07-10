@@ -36,7 +36,7 @@ ADD jpetstore.war $CATALINA_HOME/webapps/
 
 #ENTRYPOINT $CATALINA_HOME/bin/catalina.sh run
 
-ENTRYPOINT [ "bash", "startup.sh" ]
+ENTRYPOINT [ "startup.sh" ]
 
 WORKDIR $CATALINA_HOME
 
