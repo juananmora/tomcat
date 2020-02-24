@@ -40,6 +40,8 @@ ENTRYPOINT $CATALINA_HOME/bin/catalina.sh run
 
 #ENTRYPOINT [ "startup.sh" ]
 
+USER 1001
+
 WORKDIR $CATALINA_HOME
 
 
